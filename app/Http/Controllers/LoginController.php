@@ -9,7 +9,8 @@ class LoginController extends Controller
 {
     public function index(Request $request) {
         return Inertia::render('Pages/User/Show.vue', ['user' => [
-            'name' => 'Tom'
+            'name' => 'Tom',
+            'page' => 'Show'
         ]]);
     }
 }

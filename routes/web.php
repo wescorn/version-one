@@ -14,6 +14,6 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('app');
+    return view('welcome');
 });
 Route::get('/user', [UserController::class, 'show']);
