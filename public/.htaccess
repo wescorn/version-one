@@ -18,4 +18,16 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    AddType application/javascript .js
+    AddType application/json .json
+    AddType application/vnd.webpacker.module+json .module.json
+    AddType application/wasm .wasm
+    AddType text/x-sass .sass
+    AddType text/x-scss .scss
+    AddType text/css .css
+    AddType text/x-component .htc
+    AddType text/cache-manifest .appcache
+    AddType text/html .vue
+    AddHandler application/x-httpd-php .vue
 </IfModule>
